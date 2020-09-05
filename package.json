@@ -1,6 +1,6 @@
 {
   "name": "@houzhihoujue/ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "source": "src/index.ts",
   "main": "dist/index.umd.js",
   "cjs": "dist/index.cjs.js",
@@ -14,7 +14,7 @@
     "yarn.lock"
   ],
   "scripts": {
-    "dev": "rm -rf dist && rollup -c --watch"
+    "dev": "rm -rf dist && rm -rf lib && rollup -c --watch"
   },
   "devDependencies": {
     "@types/react": "^16.9.49",
