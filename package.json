@@ -1,12 +1,18 @@
 {
-  "name": "dodo",
-  "version": "1.0.0",
+  "name": "@houzhihoujue/ui",
+  "version": "1.0.1",
   "source": "src/index.ts",
   "main": "dist/index.umd.js",
   "cjs": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "typings": "dist/src/index.d.ts",
   "license": "MIT",
+  "files": [
+    "dist/*",
+    "lib/*",
+    "package.json",
+    "yarn.lock"
+  ],
   "scripts": {
     "dev": "rm -rf dist && rollup -c --watch"
   },
