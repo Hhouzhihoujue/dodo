@@ -19,6 +19,7 @@ module.exports = {
     'react/prop-types': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
+    'implicit-arrow-linebreak': 'off',
     'react/jsx-filename-extension': 'off',
     'import/prefer-default-export': 'off',
   },

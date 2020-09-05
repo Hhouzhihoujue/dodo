@@ -94,6 +94,21 @@
   resolved "http://bnpm.byted.org/@types/estree/download/@types/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha1-4Xfmme4bjCLSMXTKqnQiZEOJUJ8=
 
+"@types/fs-extra@^8.0.1":
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/@types/fs-extra/-/fs-extra-8.1.1.tgz#1e49f22d09aa46e19b51c0b013cb63d0d923a068"
+  integrity sha512-TcUlBem321DFQzBNuz8p0CLLKp0VvF/XH9E4KHNmgwyp4E3AfgI5cjiIVZWlbfThBop2qxFIh4+LeY6hVWWZ2w==
+  dependencies:
+    "@types/node" "*"
+
+"@types/glob@^7.1.1":
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.3.tgz#e6ba80f36b7daad2c685acd9266382e68985c183"
+  integrity sha512-SEYeGAIQIQX8NN6LDKprLjbrd5dARM5EXsd8GI/A5l0apYI1fGMWgPHSe4ZKL4eozlAyI+doUE9XbYS4xCkQ1w==
+  dependencies:
+    "@types/minimatch" "*"
+    "@types/node" "*"
+
 "@types/json-schema@^7.0.3":
   version "7.0.6"
   resolved "http://bnpm.byted.org/@types/json-schema/download/@types/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
@@ -103,6 +118,16 @@
   version "0.0.29"
   resolved "http://bnpm.byted.org/@types/json5/download/@types/json5-0.0.29.tgz#ee28707ae94e11d2b827bcbe5270bcea7f3e71ee"
   integrity sha1-7ihweulOEdK4J7y+UnC86n8+ce4=
+
+"@types/minimatch@*":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
+  integrity sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==
+
+"@types/node@*":
+  version "14.6.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.6.4.tgz#a145cc0bb14ef9c4777361b7bbafa5cf8e3acb5a"
+  integrity sha512-Wk7nG1JSaMfMpoMJDKUsWYugliB2Vy55pdjLpmLixeyMi7HizW2I/9QoxsPCkXl3dO+ZOVqPumKaDUv5zJu2uQ==
 
 "@types/prop-types@*":
   version "15.7.3"
@@ -499,7 +524,7 @@ color@^3.0.0:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-colorette@^1.2.1:
+colorette@^1.1.0, colorette@^1.2.1:
   version "1.2.1"
   resolved "http://bnpm.byted.org/colorette/download/colorette-1.2.1.tgz#4d0b921325c14faf92633086a536db6e89564b1b"
   integrity sha1-TQuSEyXBT6+SYzCGpTbbbolWSxs=
@@ -1125,7 +1150,7 @@ fast-deep-equal@^3.1.1:
   resolved "http://bnpm.byted.org/fast-deep-equal/download/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
   integrity sha1-On1WtVnWy8PrUSMlJE5hmmXGxSU=
 
-fast-glob@^3.1.1:
+fast-glob@^3.0.3, fast-glob@^3.1.1:
   version "3.2.4"
   resolved "http://bnpm.byted.org/fast-glob/download/fast-glob-3.2.4.tgz#d20aefbf99579383e7f3cc66529158c9b98554d3"
   integrity sha1-0grvv5lXk4Pn88xmUpFYybmFVNM=
@@ -1211,7 +1236,7 @@ flatted@^2.0.0:
   resolved "http://bnpm.byted.org/flatted/download/flatted-2.0.2.tgz#4575b21e2bcee7434aa9be662f4b7b5f9c2b5138"
   integrity sha1-RXWyHivO50NKqb5mL0t7X5wrUTg=
 
-fs-extra@8.1.0:
+fs-extra@8.1.0, fs-extra@^8.1.0:
   version "8.1.0"
   resolved "http://bnpm.byted.org/fs-extra/download/fs-extra-8.1.0.tgz#49d43c45a88cd9677668cb7be1b46efdb8d2e1c0"
   integrity sha1-SdQ8RaiM2Wd2aMt74bRu/bjS4cA=
@@ -1272,6 +1297,20 @@ globals@^12.1.0:
   integrity sha1-oYgTV2pBsAokqX5/gVkYwuGZJfg=
   dependencies:
     type-fest "^0.8.1"
+
+globby@10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-10.0.1.tgz#4782c34cb75dd683351335c5829cc3420e606b22"
+  integrity sha512-sSs4inE1FB2YQiymcmTv6NWENryABjUNPeWhOvmn4SjtKybglsyPZxFB3U1/+L1bYi0rNZDqCLlHyLYDl1Pq5A==
+  dependencies:
+    "@types/glob" "^7.1.1"
+    array-union "^2.1.0"
+    dir-glob "^3.0.1"
+    fast-glob "^3.0.3"
+    glob "^7.1.3"
+    ignore "^5.1.1"
+    merge2 "^1.2.3"
+    slash "^3.0.0"
 
 globby@^11.0.1:
   version "11.0.1"
@@ -1359,7 +1398,7 @@ ignore@^4.0.6:
   resolved "http://bnpm.byted.org/ignore/download/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=
 
-ignore@^5.1.4:
+ignore@^5.1.1, ignore@^5.1.4:
   version "5.1.8"
   resolved "http://bnpm.byted.org/ignore/download/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha1-8VCotQo0KJsz4i9YiavU2AFvDlc=
@@ -1518,6 +1557,11 @@ is-obj@^2.0.0:
   version "2.0.0"
   resolved "http://bnpm.byted.org/is-obj/download/is-obj-2.0.0.tgz#473fb05d973705e3fd9620545018ca8e22ef4982"
   integrity sha1-Rz+wXZc3BeP9liBUUBjKjiLvSYI=
+
+is-plain-object@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/is-plain-object/-/is-plain-object-3.0.1.tgz#662d92d24c0aa4302407b0d45d21f2251c85f85b"
+  integrity sha512-Xnpx182SBMrr/aBik8y+GuR4U1L9FqMSojwDQwPMmxyC6bvEqly9UBCxhauBF5vNh2gwWJNX6oDV7O+OM4z34g==
 
 is-regex@^1.1.0, is-regex@^1.1.1:
   version "1.1.1"
@@ -1731,7 +1775,7 @@ mdn-data@2.0.6:
   resolved "http://bnpm.byted.org/mdn-data/download/mdn-data-2.0.6.tgz#852dc60fcaa5daa2e8cf6c9189c440ed3e042978"
   integrity sha1-hS3GD8ql2qLoz2yRicRA7T4EKXg=
 
-merge2@^1.3.0:
+merge2@^1.2.3, merge2@^1.3.0:
   version "1.4.1"
   resolved "http://bnpm.byted.org/merge2/download/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"
   integrity sha1-Q2iJL4hekHRVpv19xVwMnUBJkK4=
@@ -2531,6 +2575,17 @@ rimraf@2.6.3:
   integrity sha1-stEE/g2Psnz54KHNqCYt04M8bKs=
   dependencies:
     glob "^7.1.3"
+
+rollup-plugin-copy@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-copy/-/rollup-plugin-copy-3.3.0.tgz#5ba230047f86b9f703a29288f242948a5580e7b9"
+  integrity sha512-euDjCUSBXZa06nqnwCNADbkAcYDfzwowfZQkto9K/TFhiH+QG7I4PUsEMwM9tDgomGWJc//z7KLW8t+tZwxADA==
+  dependencies:
+    "@types/fs-extra" "^8.0.1"
+    colorette "^1.1.0"
+    fs-extra "^8.1.0"
+    globby "10.0.1"
+    is-plain-object "^3.0.0"
 
 rollup-plugin-postcss@^3.1.8:
   version "3.1.8"

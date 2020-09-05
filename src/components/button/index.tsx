@@ -5,7 +5,7 @@ type IProps = {
   className?: string;
 };
 
-export const Button: FC<IProps> = (props) => {
+const Button: FC<IProps> = (props) => {
   const { children, className = '' } = props;
   const cls = `ui-button ${className}`;
   return (
@@ -14,3 +14,5 @@ export const Button: FC<IProps> = (props) => {
     </button>
   );
 };
+
+export default Button;
